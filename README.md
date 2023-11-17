@@ -1,5 +1,7 @@
 # My_CSS_Project
 Pratise Project
-# Amazon Clone
+# 01 Amazon Clone
 Basic Page Cloning 
+# 02 Digital Clock 
+Basic digital clock
 
