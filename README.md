@@ -4,4 +4,5 @@ Pratise Project
 Basic Page Cloning 
 # 02 Digital Clock 
 Basic digital clock
-
+# 03 To Do List 
+To List basic with JavaScript
