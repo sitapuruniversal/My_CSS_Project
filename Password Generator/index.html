@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"rel="stylesheet"/>
+  </head>
+  <body class="bg-indigo-900 h-screen flex items-center justify-center">
+    <div class="max-w-md w-full p-6 bg-indigo-900 border-2 rounded-lg shadow-md">
+      <h1 class="text-2xl font-bold mb-4 text-center text-white">Password Generator</h1>
+      <!-- password box -->
+      <div class="flex items-center mb-4">
+        <input
+          type="text"
+          id="passwordOutput"
+          placeholder="click on generate button"
+          class="w-full px-2 py-1 border rounded-md"
+          readonly/>
+      </div>
+      <!-- password button  -->
+      <div class="pt-5 flex gap-4">
+        <button id="generateBtn"
+          class="px-4 py-2 bg-purple-700 text-white rounded-md font-bold hover:bg-gray-600">
+          Generate
+        </button>
+        <button id="copyBtn"
+          class="ml-2 px-4 py-2 bg-purple-700 font-bold text-white rounded-md hover:bg-gray-600">
+          Copy To Clipboard
+        </button>
+      </div>
+      <!-- length of password condition  -->
+      <div class="flex items-center mt-4 mb-4 justify-between">
+        <label for="passwordLength" class="mr-2 text-white font-medium">Password Length:</label>
+        <input type="number" id="passwordLength" min="6" max="12"
+          value="12"
+          class="px-2 py-1 border w-20 font-medium bg-indigo-900 text-white rounded-md"/>
+      </div>
+      <!-- condition of password upper case lowercase number symbols if any check of the box then generate your condition password . please select at least on condition  -->
+      <div class="text-white font-thin font-semibold">
+        <div class="flex justify-between">
+          <label for="includeUppercase" class="mr-2"
+            >Include uppcase letters:</label
+          >
+          <input type="checkbox" id="includeUppercase" class="mr-2" />
+        </div>
+  
+        <div class="flex justify-between">
+          <label for="includeLowercase" class="mr-2"
+            >Include lowercase letters:</label
+          >
+          <input type="checkbox" id="includeLowercase" class="mr-2" />
+        </div>
+  
+        <div class="flex justify-between">
+          <label for="includeNumbers" class="mr-2">Include numbers:</label>
+          <input type="checkbox" id="includeNumbers" class="mr-2" />
+        </div>
+  
+        <div class="flex justify-between">
+          <label for="includeSymbols" class="mr-2">Include numbers:</label>
+          <input type="checkbox" id="includeSymbols" class="mr-2" />
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
